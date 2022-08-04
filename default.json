@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":automergeDigest",
+    ":automergePatch",
+    ":disableRateLimiting"
+  ],
+  "commitMessageAction": "update",
+  "commitMessagePrefix": "chore: ",
+  "platformAutomerge": true,
+  "postUpdateOptions": [
+    "gomodTidy1.17",
+    "gomodUpdateImportPaths"
+  ],
+  "reviewers": [
+    "menzerath"
+  ]
+}

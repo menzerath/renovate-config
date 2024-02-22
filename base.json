@@ -6,6 +6,12 @@
   ],
   "commitMessageAction": "update",
   "commitMessagePrefix": "chore: ",
+  "packageRules": [
+    {
+      "matchDatasources": ["golang-version"],
+      "rangeStrategy": "bump"
+    }
+  ],
   "postUpdateOptions": [
     "gomodTidy1.17",
     "gomodUpdateImportPaths"
